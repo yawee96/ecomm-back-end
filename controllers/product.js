@@ -106,12 +106,12 @@ exports.update = (req, res) => {
 
         //check if there exists one field
 
-        const { name, description, price, category, quantity, shipping } = fields;
-        if (!name && !description && !price && !category && !quantity && !shipping) {
-            return res.status(400).json({
-                error: "Atleast one field, name, description, price, category (id), quantity, or shipping are required"
-            })
-        }
+        // const { name, description, price, category, quantity, shipping} = fields;
+        // if (!name && !description && !price && !category && !quantity && !shipping && !files) {
+        //     return res.status(400).json({
+        //         error: "Atleast one field, name, description, price, category (id), quantity, or shipping are required"
+        //     })
+        // }
 
         //doesn't need to check for all fields because if we want to just update the name we don't need
         //to input the same data for the rest of the fields again
